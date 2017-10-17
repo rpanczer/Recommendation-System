@@ -9,9 +9,9 @@ data_table = pd.read_csv("movie_index.csv", index_col="movie_id")
 html = data_table[0:25].to_html()
 
 #save html to temp folder
-with open("data.html", "w") as f:
+with open("data2.html", "w") as f:
     f.write(html)
 
 #open in web browser
-full_filename = os.path.abspath("data.html")
+full_filename = os.path.abspath("data.html2")
 webbrowser.open("file://{}".format(full_filename))
